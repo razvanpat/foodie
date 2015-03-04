@@ -1,0 +1,22 @@
+div(ng-controller="SidebarCtrl")
+    md-sidenav(class="md-sidenav-left md-whiteframe-z1" md-component-id="left")
+        #top-border
+        md-toolbar(class="md-theme-indigo md-whiteframe-z0")
+            h1(class="md-toolbar-tools") Menu
+            md-button(class="toolbar-button md-accent absoluteRight" ng-click="closeNav()")
+                i(class="fa fa-arrow-left")
+        md-content(class="sidebar-content")
+            .menu-item.first
+                a(ng-click="closeNav()")
+                    i(class="fa fa-user")
+                    span Profile
+            .menu-item.last
+                a(ng-click="closeNav()")
+                    i(class="fa fa-cog")
+                    span Settings
+            md-divider
+            .menu-item.first
+                a(ng-click="closeNav()")
+                    i(class="fa fa-sign-out")
+                    span Logout
+                    

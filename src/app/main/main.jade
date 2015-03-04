@@ -1,0 +1,13 @@
+div(layout="column" layout-fill)
+
+  header(ng-include="'components/navbar/navbar.html'")
+
+  ng-include(src="'components/sidebar/sidebar.html'")
+
+  md-content.main-view
+    .no-orders
+      img.shark(src='assets/images/Shark_1.jpg')
+      div.message.
+        No orders in progress.
+      md-button(class="md-raised md-primary").
+        Start new order
